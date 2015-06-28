@@ -1,4 +1,4 @@
-ObjectiveFlickr
+ObjectiveFlickr [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 ===============
 
 ObjectiveFlickr is a Flickr API framework designed for Mac and iPhone apps.

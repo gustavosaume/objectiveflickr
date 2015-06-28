@@ -23,6 +23,19 @@
 
 /* Begin PBXBuildFile section */
 		248AF9DF0FC82FF300C22A56 /* BridgeSupport in Resources */ = {isa = PBXBuildFile; fileRef = 248AF9DB0FC82FCC00C22A56 /* BridgeSupport */; };
+		4450EED01B417C3D00A50646 /* OFUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ADECBE60F93B8810024C352 /* OFUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4450EED11B417C3D00A50646 /* OFXMLMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ADECBE70F93B8810024C352 /* OFXMLMapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4450EED21B417C3D00A50646 /* LFSiteReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A681FE71009F1AB009224E7 /* LFSiteReachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4450EED31B417C3D00A50646 /* LFWebAPIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ADECA920F939FB20024C352 /* LFWebAPIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4450EED41B417C3D00A50646 /* LFHTTPRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ADECA6A0F939F650024C352 /* LFHTTPRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4450EED51B417C3D00A50646 /* NSData+LFHTTPFormExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ADECA6D0F939F650024C352 /* NSData+LFHTTPFormExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4450EED61B417C6000A50646 /* ObjectiveFlickr.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ADECBE50F93B8810024C352 /* ObjectiveFlickr.m */; };
+		4450EED71B417C6000A50646 /* OFUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A61B56B1441E3F900F5F66C /* OFUtilities.m */; };
+		4450EED81B417C6000A50646 /* OFXMLMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ADECBE80F93B8810024C352 /* OFXMLMapper.m */; };
+		4450EED91B417C6000A50646 /* LFSiteReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A681FE81009F1AB009224E7 /* LFSiteReachability.m */; };
+		4450EEDA1B417C6000A50646 /* LFHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ADECA6B0F939F650024C352 /* LFHTTPRequest.m */; };
+		4450EEDB1B417C6000A50646 /* NSData+LFHTTPFormExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ADECA6E0F939F650024C352 /* NSData+LFHTTPFormExtensions.m */; };
+		446B66681B408B83007258BF /* ObjectiveFlickr.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ADECBE40F93B8810024C352 /* ObjectiveFlickr.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6A61B56C1441E3F900F5F66C /* OFUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A61B56B1441E3F900F5F66C /* OFUtilities.m */; };
 		6A61B56D1441E3F900F5F66C /* OFUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A61B56B1441E3F900F5F66C /* OFUtilities.m */; };
 		6A681FE91009F1AB009224E7 /* LFSiteReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A681FE71009F1AB009224E7 /* LFSiteReachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -71,6 +84,7 @@
 
 /* Begin PBXFileReference section */
 		248AF9DB0FC82FCC00C22A56 /* BridgeSupport */ = {isa = PBXFileReference; lastKnownFileType = folder; path = BridgeSupport; sourceTree = "<group>"; };
+		446B664D1B406004007258BF /* ObjectiveFlickr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObjectiveFlickr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A61B56B1441E3F900F5F66C /* OFUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OFUtilities.m; sourceTree = "<group>"; };
 		6A681FE71009F1AB009224E7 /* LFSiteReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFSiteReachability.h; sourceTree = "<group>"; };
 		6A681FE81009F1AB009224E7 /* LFSiteReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFSiteReachability.m; sourceTree = "<group>"; };
@@ -93,6 +107,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		446B66491B406004007258BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6A8666470F9593B200325E1C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -138,6 +159,7 @@
 			children = (
 				6ABF72E60F939BE600B9179E /* libObjectiveFlickr.a */,
 				6A8666490F9593B200325E1C /* ObjectiveFlickr.framework */,
+				446B664D1B406004007258BF /* ObjectiveFlickr.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -172,6 +194,20 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		446B664A1B406004007258BF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				446B66681B408B83007258BF /* ObjectiveFlickr.h in Headers */,
+				4450EED21B417C3D00A50646 /* LFSiteReachability.h in Headers */,
+				4450EED01B417C3D00A50646 /* OFUtilities.h in Headers */,
+				4450EED11B417C3D00A50646 /* OFXMLMapper.h in Headers */,
+				4450EED31B417C3D00A50646 /* LFWebAPIKit.h in Headers */,
+				4450EED41B417C3D00A50646 /* LFHTTPRequest.h in Headers */,
+				4450EED51B417C3D00A50646 /* NSData+LFHTTPFormExtensions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6A8666440F9593B200325E1C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -203,9 +239,27 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		6A8666480F9593B200325E1C /* ObjectiveFlickr (framework) */ = {
+		446B664C1B406004007258BF /* ObjectiveFlickr (framework iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6A8666500F9593B300325E1C /* Build configuration list for PBXNativeTarget "ObjectiveFlickr (framework)" */;
+			buildConfigurationList = 446B66601B406004007258BF /* Build configuration list for PBXNativeTarget "ObjectiveFlickr (framework iOS)" */;
+			buildPhases = (
+				446B66481B406004007258BF /* Sources */,
+				446B66491B406004007258BF /* Frameworks */,
+				446B664A1B406004007258BF /* Headers */,
+				446B664B1B406004007258BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ObjectiveFlickr (framework iOS)";
+			productName = ObjectiveFlickr;
+			productReference = 446B664D1B406004007258BF /* ObjectiveFlickr.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6A8666480F9593B200325E1C /* ObjectiveFlickr (framework Mac) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A8666500F9593B300325E1C /* Build configuration list for PBXNativeTarget "ObjectiveFlickr (framework Mac)" */;
 			buildPhases = (
 				6A8666440F9593B200325E1C /* Headers */,
 				6A8666460F9593B200325E1C /* Sources */,
@@ -216,7 +270,7 @@
 			);
 			dependencies = (
 			);
-			name = "ObjectiveFlickr (framework)";
+			name = "ObjectiveFlickr (framework Mac)";
 			productName = ObjectiveFlickr;
 			productReference = 6A8666490F9593B200325E1C /* ObjectiveFlickr.framework */;
 			productType = "com.apple.product-type.framework";
@@ -244,7 +298,12 @@
 		6ABF72D10F939BB800B9179E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0630;
+				TargetAttributes = {
+					446B664C1B406004007258BF = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+				};
 			};
 			buildConfigurationList = 6ABF72D40F939BB800B9179E /* Build configuration list for PBXProject "ObjectiveFlickr" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -262,8 +321,9 @@
 			projectRoot = "";
 			targets = (
 				6A8666A60F95956A00325E1C /* All */,
-				6A8666480F9593B200325E1C /* ObjectiveFlickr (framework) */,
+				6A8666480F9593B200325E1C /* ObjectiveFlickr (framework Mac) */,
 				6ABF72E50F939BE600B9179E /* ObjectiveFlickr (library) */,
+				446B664C1B406004007258BF /* ObjectiveFlickr (framework iOS) */,
 			);
 		};
 /* End PBXProject section */
@@ -277,9 +337,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		446B664B1B406004007258BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		446B66481B406004007258BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4450EED61B417C6000A50646 /* ObjectiveFlickr.m in Sources */,
+				4450EED71B417C6000A50646 /* OFUtilities.m in Sources */,
+				4450EED81B417C6000A50646 /* OFXMLMapper.m in Sources */,
+				4450EED91B417C6000A50646 /* LFSiteReachability.m in Sources */,
+				4450EEDA1B417C6000A50646 /* LFHTTPRequest.m in Sources */,
+				4450EEDB1B417C6000A50646 /* NSData+LFHTTPFormExtensions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6A8666460F9593B200325E1C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -316,12 +396,96 @@
 		};
 		6A8666AD0F95957000325E1C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6A8666480F9593B200325E1C /* ObjectiveFlickr (framework) */;
+			target = 6A8666480F9593B200325E1C /* ObjectiveFlickr (framework Mac) */;
 			targetProxy = 6A8666AC0F95957000325E1C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		446B66611B406004007258BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "ObjectiveFlickr-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ObjectiveFlickr;
+				SDKROOT = iphoneos;
+				SEPARATE_STRIP = YES;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv6 armv7 i386 armv7s arm64";
+				VERSIONING_SYSTEM = "";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		446B66621B406004007258BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "ObjectiveFlickr-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ObjectiveFlickr;
+				SDKROOT = iphoneos;
+				SEPARATE_STRIP = YES;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv6 armv7 armv7s arm64";
+				VERSIONING_SYSTEM = "";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		6A86664B0F9593B300325E1C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -414,6 +578,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -450,6 +615,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -479,6 +645,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -496,6 +663,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_VERSION = "";
@@ -504,6 +672,7 @@
 				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
 				VALID_ARCHS = "armv6 armv7 armv7s arm64";
 				ZERO_LINK = NO;
 			};
@@ -512,7 +681,16 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6A8666500F9593B300325E1C /* Build configuration list for PBXNativeTarget "ObjectiveFlickr (framework)" */ = {
+		446B66601B406004007258BF /* Build configuration list for PBXNativeTarget "ObjectiveFlickr (framework iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				446B66611B406004007258BF /* Debug */,
+				446B66621B406004007258BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A8666500F9593B300325E1C /* Build configuration list for PBXNativeTarget "ObjectiveFlickr (framework Mac)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6A86664B0F9593B300325E1C /* Debug */,
